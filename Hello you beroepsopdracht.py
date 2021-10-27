@@ -1,11 +1,9 @@
-print("Welkom bij mijn beroepsopdracht, het spel gaat dadelijk beginnen")
+print("Welkom bij mijn beroepsopdracht, het spel gaat dadelijk beginnen. Je moet vluchten uit Afghanistan nadat de taliban jouw land en stad hebben overgenomen. \n Je komt voor verschillende keuzes te staan in dit spel waarin sommigen een goede aflopen hebben en de andere helaas niet. Succes! ")
 
-
-
-
+import time
 
 def vraag1(): 
-    vraag1 = input("Je woont in Afghanistan en de taliban heeft de stad overgenomen wat ga je doen?  \n  A) Tijdelijk verstoppen. B) Terug vechten. C) Meteen Vluchten.") 
+    vraag1 = input("Nadat je te horen hebt gekregen dat de taliban jouw stan en land hebben overgenomen moet je een lastige keuze maken.  \n  A) Tijdelijk verstoppen. B) Terug vechten. C) Meteen Vluchten.") 
     if vraag1.lower() == "a":
         vraag2()
     elif vraag1.lower() == "b":
@@ -15,7 +13,7 @@ def vraag1():
 
 
 def vraag2():
-    vraag2 = input("Oke je verstopt je in een schuilkelder en je komt er later weer uit. \n  Het is 3 weken later en je eten is bijna op je moet een keuze gaan maken. \n  A) Toch gaan vechten. B) Gaan vluchten. ") 
+    vraag2 = input("Je verstopt je in de schuilkelder die je had gegraven toen je het gevoel kreeg dat de taliban zou gaan winnen. \n Er is genoeg eten en drinken voor 4 weken, hopelijk is dat genoeg. \n Je komt na 4 weken je schuilkelder uit, het zonlicht verblind je tijdelijk maar het klinkt stil buiten. Het eten is op en je moet nu een keuze gaan maken.  \n  A) Toch gaan vechten. B) Gaan vluchten. ") 
     if vraag2.lower() == "a":
         print("HIER NOG VRAAG INVOEREN OM TE VECHTEN")
     elif vraag2.lower() == "b":
@@ -60,7 +58,7 @@ def vraag6():
 def vraag7(): 
     vraag7 = input("Je komt na 6 maanden reizen veilig aan in Nederland. Hier krijg je van de douane een keuze. Wil je asiel aanvragen in Noord-Holland of Friesland. \n  A) Noord-Holland. B) Friesland. ") 
     if vraag7.lower() == "a":
-        print("hier noord holland verderlaten gaan")
+        vraag10()
     elif vraag7.lower() == "b":   
         vraag8()
 
@@ -81,6 +79,63 @@ def vraag9():
         vraag1()
     elif vraag9.lower() == "b":   
         vraag6()
+
+
+
+def vraag10(): 
+    vraag10 = input("""Je komt in Noord-Holland aan en word meteen geaccepteerd door iedereen daar. 
+ Je krijgt na een paar dagen wachten je paspoort en bent nu een echte burger van Nederland.
+ Na een paar jaar in Nederland zijn en een goed leven opbouwen kom je iemand tegen wanneer je een dagje in Amsterdam bent.
+ Hij bied je een kroket aan. Neem je deze aan of geef je toe dat je kroketten helemaal niet zo lekker vind?
+ A) Accepteer de kroket en loop door
+ B) Toegeven dat je kroketten niet zo lekker vind.  """) 
+    if vraag10.lower() == "a":
+        vraag12() 
+    elif vraag10.lower() == "b":
+        vraag11() 
+
+
+
+def vraag11(): 
+    vraag11 = input("""De man word erg boos van dit antwoord en jullie komen hierdoor in discussie over kroketten.
+ Uiteindelijk zeg je dat je frikandellen en bitterballen ook niet lekker vind, de man lijkt opeens nog bozer dan hiervoor.
+ Hij haalt een klein scherp mes tevoorschijn en steekt je precies in je hart. Niemand heeft dit door in de drukte van Amsterdam en je overlijd ter plekken
+
+ A) Opnieuw proberen
+ B) Terug naar vraag 10""") 
+    if vraag11.lower() == "a":
+        vraag1()    
+    elif vraag11.lower() == "b":
+        vraag10()
+
+
+
+def vraag12(): 
+    vraag12 = input("""Je accepteerd de kroket en wil doorlopen. De man roept je terug en verteld dat dit de laatste test van de overheid was.
+    Je bent geslaagd omdat je de kroket aannam. Je voelt je nu schuldig dat je niet de waarheid zei dus wat doe je nu? 
+    A) Je geeft toch maar toe dat je het niet zo lekker vind
+    B) Je gaat erin mee en geeft niet toe dat je het niet lekker vind   """) 
+    if vraag12.lower() == "a":
+        vraag13()
+    elif vraag12.lower() == "b":
+        vraag14()
+
+
+
+def vraag13():
+    vraag13 = input("De man vind het erg jammer om dit te horen. Hij slaat je knock out voordat je nog iets kan zeggen of doen. \n je word wakker met allemaal mensen die om je heen staan. Je weet niet waar je bent en je loop naar het eind van het dorp. In hoop daar iets te zien wat aangeeft waar je bent. \n Hier word je grootste angst de waarheid. Je ziet een bord waat duidelijk maakt dat je in Urk bent.  \n A) Opnieuw proberen B) Terug naar vraag 12 ")
+    if vraag13.lower() == "a":
+        vraag1()
+    elif vraag13.lower() == "b":
+        vraag12()
+
+
+
+def vraag14():
+    vraag14 = input(" De man feliciteerd je met het halen van de laatste test, je gaat snel naar huis en gaat door met je leven. \n Helaas wel in angst dat er elke dag nog een test kan komen. \n Gefeliciteerd je hebt het gehaald! A) Opnieuw spelen!")
+    if vraag14.lower() == "a":
+        vraag1()
+
 
 
 
