@@ -25,7 +25,7 @@ def vraag3():
     if vraag3.lower() == "a":
         vraag4()
     elif vraag3.lower() == "b":
-        print("DIT IS NOG NIET AF")
+        vraag15()
 
 
 def vraag4(): 
@@ -132,13 +132,71 @@ def vraag13():
 
 
 def vraag14():
-    vraag14 = input(" De man feliciteerd je met het halen van de laatste test, je gaat snel naar huis en gaat door met je leven. \n Helaas wel in angst dat er elke dag nog een test kan komen. \n Gefeliciteerd je hebt het gehaald! A) Opnieuw spelen!")
+    vraag14 = input(" De man feliciteerd je met het halen van de laatste test, je gaat snel naar huis en gaat door met je leven. \n Helaas leef je wel in angst dat er elke dag nog een test kan komen. \n Gefeliciteerd je hebt het gehaald! A) Opnieuw spelen!")
     if vraag14.lower() == "a":
         vraag1()
 
 
 
+def vraag15(): 
+    vraag15 = input("Je gaat meteen naar het vliegveld en hoopt dat je nog op tijd bent. Als je aankomt staan er veel mensen maar ook nog 5 vliegtuigen! Wat doen we nu? \n A) Proberen zonder ticket op een vliegtuig te komen. \n B) Een ticket kopen en hopen dat er genoeg plek is.")
+    if vraag15.lower() == "a":
+        vraag16()
+    elif vraag15.lower() == "b":
+        vraag19()
 
+
+
+def vraag16(): 
+    vraag16 = input("""Je rent naar het vliegtuig en probeerd door de mensen heen te komen, je ziet de deur van het vliegtuig al dicht gaan en je rent voor je leven.
+     Je komt bij de deur aan en hij is al zo goed als dicht. Je baald en bent zojuist alle hoop verloren. 
+     Je hebt geluk! De deur blijft vast zitten en je kan nog net naar binnen springen.
+     Je krijgt aan boord te horen dat het vliegtuig naar Cuba gaat, je hebt weinig keuze en probeerd even te slapen tijdens de reis. 
+     10 uur later kom je aan. Je stapt naar buiten en voelt de warmte om je heen
+     Je moet weer een keuze maken, wil je hier blijven of meteen op de volgende vlucht naar Nederland?
+     A) Blijven
+     B) Nederland """)
+    if vraag16.lower() == "a":
+        vraag17()
+    elif vraag16.lower() == "b":
+        vraag18()
+
+
+
+def vraag17(): 
+    vraag17 = input("""Je blijft op Cuba maar helaas, een paar dagen na je aankomst word er een staatsgreep gepleegd door het leger.
+    Overal rijden tanks en zijn soldaten, het is een grote oorlog. Je probeerd naar het vliegveld te komen om te ontsnappen.
+    Helaas heb je erg veel pech, aan de ander kant van het eiland schiet een tank recht de lucht als overwinningschot. 
+    Dit schot komt terug naar beneden en land dircet op jouw. Je lichaam word verpulvert en je bent meteen dood.
+    A) Opnieuw proberen
+    B) Terug naar vraag 16 """)
+    if vraag17.lower() == "a":
+        vraag1()
+    elif vraag17.lower() == "b":
+        vraag16()
+
+
+
+def vraag18(): 
+    vraag18 = input("""Je koop meteen een ticket voor een vlucht naar Nederland en bent snel weer onderweg.
+ Je komt in Nederland aan en word meteen geaccepteerd door iedereen daar. 
+ Je krijgt na een paar dagen wachten je paspoort en bent nu een echte burger van Nederland.
+ Na een paar jaar in Nederland zijn en een goed leven opbouwen kom je iemand tegen wanneer je een dagje in Amsterdam bent.
+ Hij bied je een kroket aan. Neem je deze aan of geef je toe dat je kroketten helemaal niet zo lekker vind?
+ A) Accepteer de kroket en loop door
+ B) Toegeven dat je kroketten niet zo lekker vind.  """)
+    if vraag18.lower() == "a":
+        vraag12()
+    elif vraag18.lower() == "b":
+        vraag11()
+
+
+def vraag19(): 
+    vraag19 = input("""""")
+    if vraag19.lower() == "a":
+        pass
+    elif vraag19.lower() == "b":
+        pass
 
 
 vraag1()
